@@ -54,12 +54,12 @@ monitoring:
     username: beats_system
     password: ${BEATS_SYSTEM_PASSWORD}
 
-# output.logstash:
-#   hosts: [ logstash:5044 ]  
-output.elasticsearch:
-  hosts: [ http://elasticsearch:9200 ]
-  username: metricbeat_internal
-  password: ${METRICBEAT_INTERNAL_PASSWORD}
+output.logstash:
+  hosts: [ logstash:5044 ]  
+# output.elasticsearch:
+#   hosts: [ http://elasticsearch:9200 ]
+#   username: metricbeat_internal
+#   password: ${METRICBEAT_INTERNAL_PASSWORD}
 
 http:
   enabled: true
