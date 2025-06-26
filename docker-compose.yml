@@ -155,7 +155,7 @@ services:
 
   apm-server:
     build:
-      context: extensions/apm/
+      context: apm-server/
       args:
         ELASTIC_VERSION: ${ELASTIC_VERSION}
     user: root
